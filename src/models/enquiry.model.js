@@ -52,13 +52,13 @@ const Enquiry = sequelize.define(
 
     status: {
       type: DataTypes.ENUM(
-        "new",
-        "contacted",
-        "proposal-sent",
-        "won",
-        "lost"
+        "pending",
+        "resolved",
+        "cancelled",
+        "in-progress"
+       
       ),
-      defaultValue: "new",
+      defaultValue: "pending",
     },
 
     notes: {
